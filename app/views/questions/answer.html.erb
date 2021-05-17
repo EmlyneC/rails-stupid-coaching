@@ -1,0 +1,17 @@
+<h1>Stupid Coaching</h1>
+
+<h2> <%= @answer %> </h2>
+
+<div class= "answer">
+  <% if @answer == "I am going to work" %>
+  <% puts %> <%= "Great!" %>
+  <% elsif @answer.include?('?')%>
+  <% puts %> <%= "Silly question, get dressed and go to work!" %>
+  <% else %>
+  <% puts %> <%= "I don't care, get dressed and go to work!" %>
+  <% end %>
+</div>
+
+<div class="link">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
